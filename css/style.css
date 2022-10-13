@@ -7354,6 +7354,62 @@ textarea.textarea-lg {
 	}
 	
 }
+@media (min-width: 100px) {
+	.mobile .thumbnail-mary::before {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.mobile .thumbnail-mary::after {
+		transform: scale(0.85);
+		opacity: 0;
+		visibility: hidden;
+	}
+	.mobile .thumbnail-mary-figure img {
+		transform: scale(1.2);
+		will-change: transform;
+	}
+	.mobile .thumbnail-mary-caption .icon,
+	.mobile .thumbnail-mary-title {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
+	}
+	.mobile .thumbnail-mary-caption .icon {
+		transform: translate3d(0, -10px, 0);
+	}
+	.mobile .thumbnail-mary-title {
+		transform: translate3d(0, 10px, 0);
+	}
+	.mobile .thumbnail-mary:hover::before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.mobile .thumbnail-mary:hover::after {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.mobile .thumbnail-mary:hover .thumbnail-mary-figure img {
+		transform: none;
+	}
+
+	.mobile .thumbnail-mary:hover .icon,
+	.mobile .thumbnail-mary:hover .thumbnail-mary-title {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.mobile .owl-timeline:hover .thumbnail-mary-decor::before, .mobile .owl-timeline:hover .thumbnail-mary-decor::after {
+		animation: none;
+	}
+	.mobile .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::before {
+		animation: item1B 1s ease infinite;
+	}
+	.mobile .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::after {
+		animation: item1A 1s ease infinite;
+	}
+	
+}
 
 @keyframes item1B {
 	25% {
