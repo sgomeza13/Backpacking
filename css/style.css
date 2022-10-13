@@ -7280,6 +7280,7 @@ textarea.textarea-lg {
 	.desktop .thumbnail-mary:hover .thumbnail-mary-figure img {
 		transform: none;
 	}
+
 	.desktop .thumbnail-mary:hover .icon,
 	.desktop .thumbnail-mary:hover .thumbnail-mary-title {
 		opacity: 1;
@@ -7295,6 +7296,63 @@ textarea.textarea-lg {
 	.desktop .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::after {
 		animation: item1A 1s ease infinite;
 	}
+	
+}
+@media (min-width: 100px) {
+	.desktop .thumbnail-mary::before {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.desktop .thumbnail-mary::after {
+		transform: scale(0.85);
+		opacity: 0;
+		visibility: hidden;
+	}
+	.desktop .thumbnail-mary-figure img {
+		transform: scale(1.2);
+		will-change: transform;
+	}
+	.desktop .thumbnail-mary-caption .icon,
+	.desktop .thumbnail-mary-title {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
+	}
+	.desktop .thumbnail-mary-caption .icon {
+		transform: translate3d(0, -10px, 0);
+	}
+	.desktop .thumbnail-mary-title {
+		transform: translate3d(0, 10px, 0);
+	}
+	.desktop .thumbnail-mary:hover::before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.desktop .thumbnail-mary:hover::after {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.desktop .thumbnail-mary:hover .thumbnail-mary-figure img {
+		transform: none;
+	}
+
+	.desktop .thumbnail-mary:hover .icon,
+	.desktop .thumbnail-mary:hover .thumbnail-mary-title {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.desktop .owl-timeline:hover .thumbnail-mary-decor::before, .desktop .owl-timeline:hover .thumbnail-mary-decor::after {
+		animation: none;
+	}
+	.desktop .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::before {
+		animation: item1B 1s ease infinite;
+	}
+	.desktop .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::after {
+		animation: item1A 1s ease infinite;
+	}
+	
 }
 
 @keyframes item1B {
