@@ -10757,7 +10757,6 @@ h2.title-modern > span {
 	position: relative;
 	text-align: center;
 	max-width: 270px;
-	left: 110px;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 0;
@@ -10793,7 +10792,7 @@ h2.title-modern > span {
 	width: 100%;
 	max-width: 118px;
 	max-height: 118px;
-	margin: auto;
+	margin: 0 auto;
 	transition: all .3s ease;
 	z-index: 1;
 }
@@ -10826,18 +10825,8 @@ h2.title-modern > span {
 }
 
 @media (min-width: 992px) {
-	.team-modern {
-		position: relative;
-		text-align: center;
-		right: 110px;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: 0;
-
-	}
 	.desktop .team-modern:hover .team-modern-figure {
 		top: -10px;
-
 	}
 	.desktop .team-modern:hover .team-modern-figure::before {
 		border-color: #01b3a7;
@@ -10849,7 +10838,6 @@ h2.title-modern > span {
 
 * + .team-modern-status {
 	margin-top: 4px;
-
 }
 
 * + .team-modern-phone {
@@ -14688,7 +14676,7 @@ html.tablet .ui-to-top {
 	z-index: 1030;
 	display: flex;
 	align-items: center;
-	height: 256px;
+	height: 56px;
 	padding: 4px;
 }
 
@@ -16547,7 +16535,7 @@ html.rd-navbar-fixed-linked .page {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 170px;
+	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 }
