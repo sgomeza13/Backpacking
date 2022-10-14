@@ -10939,6 +10939,7 @@ h2.title-modern > span {
 }
 
 @media (min-width: 992px) {
+	
 	.desktop .team-modern:hover .team-modern-figure {
 		top: -10px;
 	}
@@ -21109,7 +21110,7 @@ h1 + .tabs-line {
 .owl-carousel .owl-item {
 	position: relative;
 	min-height: 1px;
-	float: left;
+	float:left;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 }
