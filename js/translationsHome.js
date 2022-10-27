@@ -34,7 +34,8 @@ function reloadPage() {
     texto22:"Gallery",
     contact:"Contact us",
     readmore:"Read more",
-    cat1:"Tayrona Natural Park"
+    cat1:"Tayrona Natural Park",
+    home:"Home"
     
 }
     
@@ -69,10 +70,12 @@ function reloadPage() {
       contact4.textContent = language.eng.contact;
       contact5.textContent = language.eng.contact;
       contact6.textContent = language.eng.contact;
+      contact7.textContent = language.eng.contact;
       read1.textContent = language.eng.readmore;
       read2.textContent = language.eng.readmore;
       read3.textContent = language.eng.readmore;
       cat1.textContent = language.eng.cat1;
+      home.textContent = language.eng.home;
     }
    
   }
@@ -98,3 +101,14 @@ function sendTranslatedPageIndex(){
    
   
   }
+
+  function sendTranslatedPageContact(){
+    
+    if(window.location.hash === "#eng"){
+      location.href = "contact-us.html#eng"
+    }
+   
+    else location.href = "contact-us.html#esp"
+ 
+
+}

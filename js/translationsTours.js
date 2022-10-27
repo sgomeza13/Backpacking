@@ -34,8 +34,8 @@ function reloadPage() {
     text22:"A tour of 2 days and 1 night where you will receive the first day a panoramic tour of Uribia and Rioacha. You will visit the Auyama desert, San Martin or Puerto Bolivar until you reach Cabo de la Vela. You will visit the Pilon de Azucar, the lighthouse and spend the night in a Wayuu lodge",
     text23:"Buritica - Valencia Creek",
     text24:"You will walk through an ecological trail where you can see a great variety of fauna and flora, until you reach the Natural Reserve where you can see a series of high waterfalls. Then you will be transported to the mouth of the Buritaca River where you will find a beautiful eco-system. ",
-    text25:"",
-    text26:"",
+    home:"Home",
+    contact:"Contact Us",
     comprar: "Buy this tour"
 }
     
@@ -80,6 +80,8 @@ function reloadPage() {
       comprar11.textContent = language.eng.comprar;
       comprar12.textContent = language.eng.comprar;
       comprar13.textContent = language.eng.comprar;
+      home.textContent = language.eng.home;
+      contact.textContent = language.eng.contact;
     }
    
   }
@@ -105,3 +107,13 @@ function sendTranslatedPageIndex(){
    
   
   }
+  function sendTranslatedPageContact(){
+    
+    if(window.location.hash === "#eng"){
+      location.href = "contact-us.html#eng"
+    }
+   
+    else location.href = "contact-us.html#esp"
+ 
+
+}
