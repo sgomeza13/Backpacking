@@ -126,6 +126,7 @@ function sendTranslatedPageArriendos(){
 }
 
 function sendWhatsapp(n){
+  var link;
   const linksMobile = ["https://wa.me/p/5497077100382856/573107080435", 
                       "https://wa.me/p/5886358648070360/573107080435", 
                       "https://wa.me/p/5737426469610916/573107080435",
@@ -156,8 +157,11 @@ function sendWhatsapp(n){
   var  regexp = /android|iphone|kindle|ipad/i;
     if(regexp.test(dispositivo)){
       window.open(linksMobile[n]);
+      
     }
     else{
-      window.open(linksDesktop[n]);
+      window.open(linksDesktop[n]);   
+        
     }
+    
 }
