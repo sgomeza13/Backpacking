@@ -112,3 +112,10 @@ function sendTranslatedPageIndex(){
  
 
 }
+function sendTranslatedPageArriendos(){
+  if(window.location.hash === "#eng"){
+      location.href = "arriendos.html#eng"
+    }
+   
+    else location.href = "arriendos.html#esp"
+}

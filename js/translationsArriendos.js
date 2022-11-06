@@ -10,15 +10,21 @@ function reloadPage() {
       welcome:"Conoce Nuestros Toures"
     },
     eng:{
-    home:"Home",
-    contact:"Contact us"
+        text1:"Apartaments for Rent",
+        text2:"Apartaments for Rent in Santa Marta",
+        text3:"Boats for rent",
+        text4:"Boats and yachts for rent at the Santa Marta International Marina.",
+        contact:"Contact us"
     
 }
     
   };
   if(window.location.hash){
     if(window.location.hash === "#eng"){
-      home.textContent = language.eng.home;
+      text1.textContent = language.eng.text1;
+      text2.textContent = language.eng.text2;
+      text3.textContent = language.eng.text3;
+      text4.textContent = language.eng.text4;
       contact.textContent = language.eng.contact;
     }
    
@@ -51,18 +57,4 @@ function sendTranslatedPageContacts(){
       }
      
       else location.href = "contact-us.html#esp"
-}
-function sendTranslatedPageContacts(){
-  if(window.location.hash === "#eng"){
-      location.href = "contact-us.html#eng"
-    }
-   
-    else location.href = "contact-us.html#esp"
-}
-function sendTranslatedPageArriendos(){
-  if(window.location.hash === "#eng"){
-      location.href = "arriendos.html#eng"
-    }
-   
-    else location.href = "arriendos.html#esp"
 }

@@ -117,3 +117,23 @@ function sendTranslatedPageIndex(){
  
 
 }
+function sendTranslatedPageArriendos(){
+  if(window.location.hash === "#eng"){
+      location.href = "arriendos.html#eng"
+    }
+   
+    else location.href = "arriendos.html#esp"
+}
+
+function sendWhatsapp(n){
+  const linksMobile = ["https://wa.me/p/5497077100382856/573107080435"];
+  const linksDesktop = ["https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interesado%20en%20el%20Tour%20de%20CABO%20SAN%20JUAN%20-%20PNN%20TAYRONA"];
+  var dispositivo = navigator.userAgent;
+  var  regexp = /android|iphone|kindle|ipad/i;
+    if(regexp.test(dispositivo)){
+      window.open(linksMobile[n]);
+    }
+    else{
+      window.open(linksDesktop[n]);
+    }
+}
