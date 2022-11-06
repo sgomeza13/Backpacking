@@ -10,6 +10,7 @@ function reloadPage() {
       welcome:"Conoce Nuestros Toures"
     },
     eng:{
+        home: "Home",
         text1:"Apartaments for Rent",
         text2:"Apartaments for Rent in Santa Marta",
         text3:"Boats for rent",
@@ -21,6 +22,7 @@ function reloadPage() {
   };
   if(window.location.hash){
     if(window.location.hash === "#eng"){
+      home.textContent = language.eng.home;  
       text1.textContent = language.eng.text1;
       text2.textContent = language.eng.text2;
       text3.textContent = language.eng.text3;

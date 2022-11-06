@@ -126,8 +126,32 @@ function sendTranslatedPageArriendos(){
 }
 
 function sendWhatsapp(n){
-  const linksMobile = ["https://wa.me/p/5497077100382856/573107080435"];
-  const linksDesktop = ["https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interesado%20en%20el%20Tour%20de%20CABO%20SAN%20JUAN%20-%20PNN%20TAYRONA"];
+  const linksMobile = ["https://wa.me/p/5497077100382856/573107080435", 
+                      "https://wa.me/p/5886358648070360/573107080435", 
+                      "https://wa.me/p/5737426469610916/573107080435",
+                      "https://wa.me/p/5436119856443971/573107080435",
+                      "https://wa.me/p/8253900954680241/573107080435",
+                      "https://wa.me/p/8050300155042756/573107080435",
+                      "https://wa.me/p/5805713902794450/573107080435",
+                      "https://wa.me/p/5790294567668363/573107080435",
+                      "https://wa.me/p/5834550399910498/573107080435",
+                      "https://wa.me/p/8006775436063853/573107080435",
+                      "https://wa.me/p/5448780775235672/573107080435",
+                      "https://wa.me/p/8331392520267308/573107080435",
+                      "https://wa.me/p/5413005832160129/573107080435"];
+  const linksDesktop = ["https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interesado%20en%20el%20Tour%20de%20CABO%20SAN%20JUAN%20-%20PNN%20TAYRONA", 
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interesado%20en%20el%20Tour%20de%20PLAYA%20CRISTAL%20-%20PNN%20TAYRONA",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20a%20BAH%C3%8DA%20CONCHA%20-%20PNN%20TAYRONA",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20LANCHA%20DIRECTA%20AL%20TAYRONA",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20Adventure%20Sierra%20Minca",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20SIERRA%20MINCA%20-%20JUNGLE%20AND%20ADVENTURE",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20MINCA%20LA%20TAGUA%20Y%20TAGANGA%20(RIO%20Y%20MAR)",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20MINCA%20CAF%C3%89-CACAO%20JUNGLE%20TOUR%20%F0%9F%8D%83",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20MINCA%20Y%20TAGANGA%20(RIO%20Y%20MAR)",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20PALOMINO%20(RIO%20Y%20MAR)",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20PUNTA%20GALLINAS%20Y%20CABO%20DE%20LA%20VELA",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20CABO%20DE%20LA%20VELA%20(2%20DIAS%20-%201%20NOCHE)",
+                        "https://api.whatsapp.com/send?phone=573107080435&text=%20Estoy%20interasado%20en%20el%20Tour%20BURITACA%20-%20QUEBRADA%20VALENCIA"];
   var dispositivo = navigator.userAgent;
   var  regexp = /android|iphone|kindle|ipad/i;
     if(regexp.test(dispositivo)){
